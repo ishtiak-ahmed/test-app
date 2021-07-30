@@ -32,7 +32,7 @@ export default function Main() {
     <div className="main">
       <div className="main__nav">
         <div>
-          <h1>Courses {blocks.length}</h1>
+          <h1>Courses</h1>
         </div>
         <div>
           {categories?.map((cat, index) => (
