@@ -16,7 +16,7 @@ h2 {
 
 .app {
   display: grid;
-  grid-template-columns: minmax(85px, 16%) auto;
+  grid-template-columns: minmax(65px, 16%) auto;
 }
 .sidebar {
   padding: 4em 0;
@@ -107,13 +107,33 @@ h2 {
   }
   .course__item {
     height: 275px;
+    padding: 1em;
+    border-radius: 1em;
   }
   .play-btn {
     width: 58px;
     height: 54px;
   }
+  .main__body {
+    padding: 0 1em;
+  }
+  h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
 }
 @media (max-width: 560px) {
+  .sidebar__item {
+    border: none;
+    &__icon {
+      height: 40px;
+      width: 40px;
+    }
+    &.active,
+    &:hover {
+      border: none;
+    }
+  }
   .main__nav {
     grid-template-columns: 1fr;
   }
